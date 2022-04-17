@@ -44,4 +44,4 @@ xgbpred <- predict (xgb1,dtest)
 #binary
 #xgbpred <- ifelse (xgbpred > 0.5,1,0)
 #--------------------------------------------------------------------------------
-print(confusionMatrix(as.factor(ts_label), mode="prec_recall", as.factor(xgbpred), positive = "1"))
+print(confusionMatrix(as.factor(ts_label), mode="prec_recall", as.factor(xgbpred)))
